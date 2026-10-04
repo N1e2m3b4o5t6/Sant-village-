@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santé Village - Orientation médicale</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f9f4;
+    color: #1a1a1a;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  header {
+    background: #0a7d4b;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+  }
+  header h1 { font-size: 26px; margin-bottom: 8px; }
+  header p { font-size: 16px; opacity: 0.95; }
+
+  nav {
+    background: #075c37;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: white;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  nav a:active, nav a:hover { background: #0a7d4b; }
+
+  main { max-width: 800px; margin: 0 auto; padding: 20px 15px 60px; }
+
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  h2 {
+    color: #0a7d4b;
+    font-size: 22px;
+    margin-bottom: 14px;
+    border-bottom: 3px solid #0a7d4b;
+    padding-bottom: 8px;
+  }
+  h3 { font-size: 18px; margin: 16px 0 6px; color: #075c37; }
+  p { margin-bottom: 10px; }
+  ul { padding-left: 22px; margin-bottom: 12px; }
+  li { margin-bottom: 8px; }
+
+  .danger {
+    background: #fff0f0;
+    border-left: 6px solid #d32f2f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .danger h3 { color: #d32f2f; margin-top: 0; }
+  .danger li { font-weight: bold; color: #b71c1c; }
+
+  .btn {
+    display: inline-block;
+    background: #0a7d4b;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 6px 6px 6px 0;
+    font-size: 16px;
+  }
+  .btn-red { background: #d32f2f; }
+
+  footer {
+    background: #075c37;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 500px) {
+    header h1 { font-size: 22px; }
+    body { font-size: 17px; }
+    h2 { font-size: 20px; }
+    nav a { padding: 12px 12px; font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏥 Santé Village</h1>
+  <p>Vous orienter sur votre santé, pas remplacer le médecin</p>
+</header>
+
+<nav>
+  <a href="#urgent">🚨 Urgence</a>
+  <a href="#courant">🤒 Maladies courantes</a>
+  <a href="#prevention">🛡️ Prévention</a>
+  <a href="#ou">📍 Où consulter</a>
+</nav>
+
+<main>
+
+  <section id="urgent">
+    <h2>🚨 Quand aller IMMÉDIATEMENT au centre de santé</h2>
+    <p>Si vous ou un proche présentez <strong>un de ces signes</strong>, ne restez pas à la maison. Allez au centre de santé le plus proche <strong>tout de suite</strong>.</p>
+    <div class="danger">
+      <h3>Signes de danger</h3>
+      <ul>
+        <li>Fièvre qui dure plus de 2 jours, surtout chez un enfant</li>
+        <li>Difficulté à respirer ou respiration très rapide</li>
+        <li>Convulsions (le corps tremble et se raidit)</li>
+        <li>Perte de connaissance ou somnolence inhabituelle</li>
+        <li>Vomissements répétés, impossible de boire</li>
+        <li>Diarrhée avec sang, ou déshydratation (yeux creux, bouche sèche)</li>
+        <li>Femme enceinte : saignement, maux de tête violents, vision trouble</li>
+        <li>Douleur très forte au ventre ou à la poitrine</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="courant">
+    <h2>🤒 Maladies courantes : quoi faire en attendant</h2>
+
+    <h3>Paludisme (fièvre)</h3>
+    <ul>
+      <li>Faire un test au centre de santé dès la fièvre</li>
+      <li>Boire beaucoup d'eau</li>
+      <li>Ne pas prendre d'antibiotiques sans avis médical</li>
+      <li>Si fièvre > 2 jours, aller au centre</li>
+    </ul>
+
+    <h3>Diarrhée</h3>
+    <ul>
+      <li>Boire une solution de réhydratation (eau + sel + sucre)</li>
+      <li>Continuer à manger léger</li>
+      <li>Consulter si cela dure plus de 2 jours ou s'il y a du sang</li>
+    </ul>
+
+    <h3>Toux / rhume</h3>
+    <ul>
+      <li>Boire chaud, se reposer</li>
+      <li>Consulter si la toux dure plus de 2 semaines ou s'accompagne de sang</li>
+    </ul>
+
+    <h3>Mal de tête</h3>
+    <ul>
+      <li>Se reposer, boire de l'eau</li>
+      <li>Si le mal de tête est très fort et inhabituel, consulter</li>
+    </ul>
+  </section>
+
+  <section id="prevention">
+    <h2>🛡️ Prévention : les gestes simples</h2>
+    <ul>
+      <li><strong>Dormir sous une moustiquaire</strong> chaque nuit (contre le paludisme)</li>
+      <li><strong>Se laver les mains</strong> au savon avant de manger et après les toilettes</li>
+      <li><strong>Boire de l'eau propre</strong> (bouillie ou traitée)</li>
+      <li><strong>Vacciner les enfants</strong> selon le calendrier du centre de santé</li>
+      <li><strong>Consultation prénatale</strong> pour les femmes enceintes</li>
+      <li><strong>Éviter les eaux stagnantes</strong> autour de la maison</li>
+    </ul>
+  </section>
+
+  <section id="ou">
+    <h2>📍 Où consulter</h2>
+    <p>Remplacez ces informations par celles de votre village :</p>
+    <ul>
+      <li><strong>Centre de santé de [Nom du village]</strong><br>
+          Adresse : [à compléter]<br>
+          Téléphone : [à compléter]</li>
+      <li><strong>Poste de santé le plus proche</strong><br>
+          Adresse : [à compléter]</li>
+      <li><strong>Agent de santé communautaire</strong><br>
+          Nom : [à compléter] — Tél : [à compléter]</li>
+    </ul>
+    <p style="margin-top:15px;">
+      <a href="tel:+237000000000" class="btn">📞 Appeler un agent de santé</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>ℹ️ À propos</h2>
+    <p>Ce site a pour but d'<strong>orienter</strong> la population sur les premiers réflexes de santé et de <strong>diriger vers les soins</strong>. Il ne remplace en aucun cas l'avis d'un professionnel de santé.</p>
+    <p><strong>En cas de doute, consultez toujours un agent de santé.</strong></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Santé Village — Information et orientation, pas diagnostic médical.</p>
+</footer>
+
+</body>
+</html>  
